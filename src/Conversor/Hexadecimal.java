@@ -3,18 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package FactoryOperaciones;
+package Conversor;
 
 /**
  *
- * @author LN710Q
+ * @author Oscar Lovato
  */
-public class Suma implements Operaciones {
+public class Hexadecimal implements Conversor{
+
     @Override
-    public void operar(){
+    public String Convertir(int var) {
+        return Integer.toHexString(var);
     }
-    public int suma(int a,int b,int c){
-          c=a+b;
-          return c;
-    }
+    
 }

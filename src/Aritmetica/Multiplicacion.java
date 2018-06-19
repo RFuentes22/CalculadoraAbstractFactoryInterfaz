@@ -3,17 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package FactoryOperaciones;
+package Aritmetica;
 
 /**
  *
  * @author LN710Q
  */
-public class Resta implements Operaciones {
-     @Override
-    public void operar(){}
-    public int resta(int a,int b,int c){
-          c=a-b;
-          return c;
+public class Multiplicacion implements Aritmetica{
+
+    @Override
+    public double calcular(double var1, double var2) {
+        return var1*var2;
     }
+    
 }

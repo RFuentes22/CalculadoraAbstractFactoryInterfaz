@@ -3,15 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package abstractcalculadora;
+package calculabo;
+
+import Aritmetica.Aritmetica;
+import Conversor.Conversor;
 
 /**
  *
  * @author LN710Q
  */
-public class FactoryProducer {
-    public static AbstractFactory getFactory(String type){
+public interface AbstractFactory {
+    Aritmetica getAritmetica(String type);
+    Conversor getConversor(String type);
     
-    return null;
-    }
 }

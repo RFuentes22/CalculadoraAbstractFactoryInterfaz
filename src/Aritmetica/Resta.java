@@ -3,17 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package abstractcalculadora;
-
-import FactoryOperaciones.FactoryOperaciones;
-import GUI.Gui;
+package Aritmetica;
 
 /**
  *
  * @author LN710Q
  */
-public interface AbstractFactory {
-   
-   FactoryOperaciones getOperaciones(String type);
-   new Gui().setVisible(true);
+public class Resta implements Aritmetica{
+
+    @Override
+    public double calcular(double var1, double var2) {
+        return var1-var2;
+    }
+    
 }

@@ -3,15 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package abstractcalculadora;
-
-import GUI.Gui;
+package Conversor;
 
 /**
  *
  * @author LN710Q
  */
-public class OperacionesAbstractFactory {
-    AbstractFactory factory;
-    new Gui().setVisible(true);
+public interface Conversor {
+    String Convertir(int var);
 }

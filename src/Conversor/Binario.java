@@ -3,12 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package FactoryOperaciones;
+package Conversor;
 
 /**
  *
  * @author LN710Q
  */
-public interface Operaciones {
-    void operar();
+public class Binario implements Conversor{
+
+    @Override
+    public String Convertir(int var) {
+        return Integer.toBinaryString(var);
+    }
+    
+    
 }
